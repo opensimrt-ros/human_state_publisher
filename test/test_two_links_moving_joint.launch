@@ -1,0 +1,9 @@
+<launch>
+  <param name="robot_description"
+         textfile="$(find human_state_publisher)/test/two_links_moving_joint.urdf" />
+
+  <node pkg="human_state_publisher" name="two_links_moving_joints_pub" type="human_state_publisher">
+  </node>
+
+  <test test-name="test_two_links_moving_joint" pkg="human_state_publisher" type="test_two_links_moving_joint" />
+</launch>
